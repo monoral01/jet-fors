@@ -1,0 +1,15 @@
+<svg width="158" height="157" viewBox="0 0 158 157" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.2">
+<path d="M3.5 43L95.5 3M3.5 43L104.5 156M3.5 43L83.25 60.75M95.5 3L155 28M95.5 3L83.25 60.75M155 28L83.25 60.75M155 28L104.5 156M104.5 156L83.25 60.75" stroke="white"/>
+<circle cx="95" cy="3" r="3" fill="white"/>
+<circle cx="83" cy="61" r="3" fill="white"/>
+<circle cx="155" cy="28" r="3" fill="white"/>
+<circle cx="3" cy="43" r="3" fill="white"/>
+<circle cx="95" cy="3" r="1" fill="#00C0FF"/>
+<circle cx="83" cy="61" r="1" fill="#00C0FF"/>
+<circle cx="155" cy="28" r="1" fill="#00C0FF"/>
+<circle cx="3" cy="43" r="1" fill="#00C0FF"/>
+</g>
+</svg>
+
+
