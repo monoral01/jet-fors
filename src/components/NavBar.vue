@@ -10,7 +10,6 @@
         <router-link to="/">Вакансии</router-link>
         <router-link to="/about">О нас</router-link>
         <router-link to="/cases">Кейсы</router-link>
-        <router-link to="/team">Команда</router-link>
         <router-link to="/clients">Клиенты</router-link>
         <router-link to="/contacts">Контакты</router-link>
       </nav>

@@ -1,5 +1,5 @@
 <template>
-  <a-col span="12">
+  <a-col span="8">
     <a-form layout="vertical" :model="formState" :ref="formRef" :rules="rules">
       <FormItem>
         <template #element>
@@ -11,10 +11,10 @@
           <a-input placeholder="Введите Email" />
         </template>
       </FormItem>
-      <a-button></a-button>
-      <a-button></a-button>
+      <a-button ghost :disabled="false">Отправить резюме</a-button>
+      <a-button ghost :disabled="false">Предложить проект</a-button>
       <FormItem>
-        <template #element></template>
+        <!-- <a-select :load-options="[{ label: 'biba', value: 'biba' }]" /> -->
       </FormItem>
       <FormItem>
         <template #element></template>
@@ -25,7 +25,7 @@
     </a-form>
   </a-col>
 </template>
-<script>
+<script lang="ts">
 import { ref, defineComponent } from "vue";
 import FormItem from "./FormItem.vue";
 import { useForm } from "ant-design-vue/lib/form";
@@ -52,4 +52,13 @@ export default defineComponent({
   },
 });
 </script>
-<style lang="scss"></style>
+<style lang="scss">
+.ant-btn {
+  &-background-ghost {
+    &[disabled] {
+      color: white;
+      opacity: 0.4;
+    }
+  }
+}
+</style>
