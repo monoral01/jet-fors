@@ -1,17 +1,28 @@
 <template>
   <a-row>
     <a-col span="1"></a-col>
-    <a-col class="navbar-logo">
+    <a-col class="navbar-logo" @click="router.push('/')">
       <p class="navbar-logo-1">jet</p>
       <p class="navbar-logo-2">fors</p>
     </a-col>
-    <a-col span="16">
+    <a-col span="1" />
+    <a-col span="15">
       <nav>
-        <router-link to="/">Вакансии</router-link>
-        <router-link to="/about">О нас</router-link>
-        <router-link to="/cases">Кейсы</router-link>
-        <router-link to="/clients">Клиенты</router-link>
-        <router-link to="/contacts">Контакты</router-link>
+        <div>
+          <router-link to="/vacancies">Вакансии</router-link>
+        </div>
+        <div>
+          <router-link to="/about">О нас</router-link>
+        </div>
+        <div>
+          <router-link to="/cases">Кейсы</router-link>
+        </div>
+        <div>
+          <router-link to="/clients">Клиенты</router-link>
+        </div>
+        <div>
+          <router-link to="/contacts">Контакты</router-link>
+        </div>
       </nav>
     </a-col>
     <a-col span="4">
@@ -21,13 +32,14 @@
   </a-row>
 </template>
 <script lang="ts">
+import router from "@/router";
 import { defineComponent, ref } from "vue";
 
 export default defineComponent({
   name: "NavBar",
   setup() {
     const count = ref(0);
-    return { count };
+    return { count, router };
   },
 });
 </script>
@@ -77,8 +89,13 @@ $hover-color: #818181;
   }
 }
 nav {
-  width: max-content;
+  display: flex;
+  flex-direction: row;
+  // justify-content: space-evenly;
   a {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin: 30px;
     color: white;
     text-decoration: none;
     text-transform: uppercase;
