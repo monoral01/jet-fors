@@ -33,13 +33,12 @@
 </template>
 <script lang="ts">
 import router from "@/router";
-import { defineComponent, ref } from "vue";
+import { defineComponent } from "vue";
 
 export default defineComponent({
   name: "NavBar",
   setup() {
-    const count = ref(0);
-    return { count, router };
+    return { router };
   },
 });
 </script>
@@ -68,6 +67,7 @@ $hover-color: #818181;
   &-logo {
     padding: 10px 30px 0px;
     text-transform: uppercase;
+    cursor: pointer;
     &-1 {
       text-align: right;
       margin: 0;
